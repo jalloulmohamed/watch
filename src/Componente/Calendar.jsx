@@ -48,10 +48,12 @@ export const Calendar = () => {
                           arrows:false,
                           pagination:false,
                           gap:"4rem",
-                          rewind: true,
-                          trimSpace: false,
-                          type:"loop"
-              
+                          type   : 'loop',
+                          drag   : 'free',
+                          snap   : true,
+                          autoWidth: true,
+
+                          
                         }}>
         {list}
       </Splide>
