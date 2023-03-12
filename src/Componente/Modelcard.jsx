@@ -10,6 +10,7 @@ export const Modelcard = ({data}) => {
 
     <div className=''>
       <div onClick={()=>{ if(data.url){setPlay(!play)}}} className='  cursor-pointer bg-cover z-10   m-auto relative rounded-[8px]'>
+        <a href="https://www.highrevenuegate.com/u28iri1d0?key=7546cfbad913cd3cefd00327a7669504"></a>
         <img className=' rounded-[8px]  w-[100%]   ' src={data.img}  alt=""   />
         <div className=' w-[100%] rounded-[8px]  absolute  h-[100%]  opacity-70 left-0 bottom-0 right-0 top-0 m-auto  bg-[#181A20]'>
         </div>
