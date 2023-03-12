@@ -9,7 +9,6 @@ export const Modelcard = ({data}) => {
   return (
 
     <div className=''>
-      <a href="https://www.highrevenuegate.com/u28iri1d0?key=7546cfbad913cd3cefd00327a7669504"></a>
       <div onClick={()=>{ if(data.url){setPlay(!play)}}} className='  cursor-pointer bg-cover z-10   m-auto relative rounded-[8px]'>
        
         <img className=' rounded-[8px]  w-[100%]   ' src={data.img}  alt=""   />
