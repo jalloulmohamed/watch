@@ -25,7 +25,7 @@ export const NewWatch = () => {
           return (<Modelcard  data={ele} ></Modelcard>); 
       })
   return (
-    <div className='z-0 grid grid-cols-2 md:grid-cols-4 auto-rows-max  gap-4   p-[10px]'>
+    <div className='z-0 grid grid-cols-2 md:grid-cols-4 auto-rows-max  overflow-auto gap-4   p-[10px]'>
       {loading && <div className='col-span-4 pt-[100px] text-center w-[100%]'>
         <ReactLoading className='m-auto' type="spin" color="#06C149"
           height={100} width={50} />

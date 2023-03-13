@@ -37,17 +37,19 @@ export const Calendar = () => {
                 </SplideSlide>)
     }
   return (
-    <div className=' bg-[#181A20]  text-center '>
+    <div className=' bg-[#181A20]   text-center '>
       <div className='flex items-center justify-end '>
-        <h1 className='text-[#fff] pb-[20px] px-[10px] text-[20px] md:text-[30px]'>
+        <h1 className='text-[#fff] pb-[5px]  md:pb-[20px] px-[10px] text-[20px] md:text-[28px]'>
         Release Calendar
         </h1>
       </div>
       <Splide  options={{
-                          perPage:7,
+                          perPage:8,
+                          arrows:false,
                           pagination:false,
                           drag   : 'free',
                           autoWidth: false,
+                          
                         }}>
         {list}
       </Splide>

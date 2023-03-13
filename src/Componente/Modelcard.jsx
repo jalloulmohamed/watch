@@ -32,7 +32,7 @@ export const Modelcard = ({data}) => {
 
         <>{play &&  <div className=' z-20 absolute left-0 bottom-0 bg-[#0000006d] right-0 top-0 w-[100vw] '>
                       <div className=' absolute   bg-[#181A20] w-[100%] h-[100%]  xl:w-[1000px]  xl:h-[500px] left-0   bottom-0 right-0 top-0  m-auto'>
-                        <iframe allowfullscreen src={data.url} className='w-[100%] h-[100%]  ' controls >
+                        <iframe allowfullscreen src={data.url} className='  w-[100%] h-[100%]  ' controls >
 
                         </iframe>
                           <IoMdClose onClick={()=>{setPlay(!play)}} className=' text-[25px] md:text-[25px] text-[#fff] absolute top-0 right-0  m-[10px] '></IoMdClose>

@@ -9,7 +9,7 @@ export const Home = () => {
             <BrowserRouter>
                 <Navbar></Navbar>
                 <Calendar></Calendar>
-                <h1 className='text-[#fff] pt-[20px] md:pt-[50px] px-[10px] text-[20px] text-end md:text-[30px]'>
+                <h1 className='text-[#fff] pt-[20px] md:pt-[20px] px-[10px] text-[20px] text-end md:text-[30px]'>
                   New Episode Releases
                 </h1>
                 <Routes>
