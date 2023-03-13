@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react'
 import {IoMdClose} from 'react-icons/io'
 import {CiTimer} from 'react-icons/ci'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 
 export const Modelcard = ({data}) => {
-     const[play,setPlay] = useState("");
+     const[play,setPlay] = useState();
      const navigate = useNavigate()
-
-
+    console.log(data.img);
   return (
 
     <div>
-      <div onClick={()=>{ if(data.url){setPlay(data.url + "/Witanimecom_DA_EP_01_FHD.html")}}} className='  cursor-pointer bg-cover z-10   m-auto relative rounded-[8px]'>
+      <div onClick={()=>{ if(data.url){setPlay(!play)}}} className='  cursor-pointer bg-cover z-10   m-auto relative rounded-[8px]'>
        
         <img className=' rounded-[8px]  w-[100%]   ' src={data.img}  alt=""   />
         <div className=' w-[100%] rounded-[8px]  absolute  h-[100%]  opacity-70 left-0 bottom-0 right-0 top-0 m-auto  bg-[#181A20]'>
@@ -34,7 +34,7 @@ export const Modelcard = ({data}) => {
       </div>
         <>{play &&  <div className=' z-20  absolute left-0 bottom-0 bg-[#0000006d] right-0 top-0 w-[100vw] '>
                       <div className=' absolute   bg-[#181A20] w-[100%] h-[100%]  xl:w-[1000px]  xl:h-[500px] left-0   bottom-0 right-0 top-0  m-auto'>
-                        <video  src="https://dc596.4shared.com/img/w2WM_YR-iq/f215fabc/dlink__2Fdownload_2Fw2WM_5FYR-iq_3Fsbsr_3D9087d6767f59819d0552eeb16692108dad7_26bip_3DNjIuMjUxLjE2MS44OA_26lgfp_3D20_26bip_3DNjIuMjUxLjE2MS44OA_26bip_3DNjIuMjUxLjE2MS44OA/preview.mp4" className='  w-[100%] h-[100%]  ' controls >
+                        <video  src={data.url} className='  w-[100%] h-[100%]  ' controls >
 
                         </video>
                           <IoMdClose onClick={()=>{setPlay(!play)}} className=' text-[25px] md:text-[25px] text-[#fff] absolute top-0 right-0  m-[10px] '></IoMdClose>
