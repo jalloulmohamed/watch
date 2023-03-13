@@ -8,13 +8,11 @@ import axios from 'axios'
 export const Modelcard = ({data}) => {
      const[play,setPlay] = useState();
      const navigate = useNavigate()
-    console.log(data.img);
   return (
-
     <div>
       <div onClick={()=>{ if(data.url){setPlay(!play)}}} className='  cursor-pointer bg-cover z-10   m-auto relative rounded-[8px]'>
        
-        <img className=' rounded-[8px]  w-[100%]   ' src={data.img}  alt=""   />
+        <img className=' rounded-[8px]   w-[100%] h-[320px]' src={data.img}  alt=""   />
         <div className=' w-[100%] rounded-[8px]  absolute  h-[100%]  opacity-70 left-0 bottom-0 right-0 top-0 m-auto  bg-[#181A20]'>
         </div>
         <h1 className='text-[#fff] absolute top-[5px] bg-[#06C149] rounded-[5px] px-[5px] right-[10px]  text-[15px]'>7.9</h1>
@@ -30,19 +28,16 @@ export const Modelcard = ({data}) => {
             </div>
           </div>
         }
-        
+  
       </div>
         <>{play &&  <div className=' z-20  absolute left-0 bottom-0 bg-[#0000006d] right-0 top-0 w-[100vw] '>
                       <div className=' absolute   bg-[#181A20] w-[100%] h-[100%]  xl:w-[1000px]  xl:h-[500px] left-0   bottom-0 right-0 top-0  m-auto'>
                         <video  src={data.url} className='  w-[100%] h-[100%]  ' controls >
-
                         </video>
                           <IoMdClose onClick={()=>{setPlay(!play)}} className=' text-[25px] md:text-[25px] text-[#fff] absolute top-0 right-0  m-[10px] '></IoMdClose>
                       </div>
-                      
                   </div>
         }</>
-
     </div>
     
   )
