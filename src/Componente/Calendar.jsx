@@ -30,7 +30,7 @@ export const Calendar = () => {
 
 
     const list = []
-    for (let  i = 1; i <= numbreofday; i++) {
+    for (let  i = datenew.getDate(); i <= numbreofday; i++) {
       list.push(
                 <SplideSlide >
                     <Day select={select} func={setSelect}  day={i} name={week[i%7]} ></Day>
@@ -44,16 +44,10 @@ export const Calendar = () => {
         </h1>
       </div>
       <Splide  options={{
-                          perPage:10,
-                          arrows:false,
+                          perPage:7,
                           pagination:false,
-                          gap:"4rem",
-                          type   : 'loop',
                           drag   : 'free',
-                          snap   : true,
-                          autoWidth: true,
-
-                          
+                          autoWidth: false,
                         }}>
         {list}
       </Splide>
