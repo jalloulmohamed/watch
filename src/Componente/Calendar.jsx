@@ -44,7 +44,7 @@ export const Calendar = () => {
         </h1>
       </div>
       <Splide  options={{
-                          perPage:8,
+                          perPage:7,
                           arrows:false,
                           pagination:false,
                           drag   : 'free',
