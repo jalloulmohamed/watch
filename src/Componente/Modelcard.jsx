@@ -17,7 +17,7 @@ export const Modelcard = ({data}) => {
           <h1 className='text-[#fff] absolute top-[5px] bg-[#06C149] rounded-[5px] px-[5px] right-[10px]  text-[15px]'>{data.review}</h1>
           <div className='  left-[10px]  absolute bottom-0 right-0 m-auto py-[10px]'>
             <h1 className=' text-[14px] md:text-[20px] font-[300] text-[#fff] text-start ' >{data.titel}</h1>
-            <h1 className=' text-[14px] text-[#fff] text-start ' >{data.episode}</h1>
+            <h1 className=' text-[14px] text-[#fff] text-start ' >Episode {data.episode}</h1>
           </div>
           {
             !data.url && <div className=' w-[100%] rounded-[8px]  absolute  h-[100%]  opacity-70 left-0 bottom-0 right-0 top-0 m-auto  bg-[#0d0d0d]'>
